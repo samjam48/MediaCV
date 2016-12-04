@@ -5,6 +5,13 @@ This is main CSS file that contains custom style
 rules used in this template
 ==================================================
 
+color scheme
+#283618 - black leather jacket
+#BC6C25 - Liver (orange)
+#DDA15E - Earth Yellow
+#2660A4 - Lapis lazuli (blue)
+#FEFAE0 - Light Yellow
+
 
 ==================================================
                 TABLE OF CONTENTS
@@ -30,7 +37,7 @@ rules used in this template
     Responsive
 ==================================================
 */
-
+/*rgba(74, 195, 191, 0.9)*/
 
 
 /* Header Style
@@ -143,7 +150,8 @@ body.fixed-menu #burger-menu {
 ====================================*/
 #navigation {
   position: fixed;
-  background-color: rgba(74, 195, 191, 0.9);
+  background-color: #2660A4;
+  opacity: 0.9;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -174,7 +182,8 @@ body.fixed-menu #burger-menu {
 }
 
 #navigation .nav-wrapper ul li {
-  width: 33.333%;
+  /*width: 33.333%;*/
+  width: 50%;
   float: left;
   text-align: center;
   margin-bottom: 60px;
@@ -254,16 +263,16 @@ body.fixed-menu #burger-menu {
 
 #navigation .nav-wrapper ul li a.active i,
 #navigation .nav-wrapper ul li a:hover i {
-  color: #4ac3bf;
+  color: #BC6C25;
 }
 
 #navigation .nav-wrapper ul li a.active svg path,
 #navigation .nav-wrapper ul li a:hover svg path {
-  fill: #4ac3bf;
+  fill: #BC6C25;
 }
 
 #navigation .nav-wrapper h4 {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-weight: bold;
   font-size: 75px;
   text-transform: uppercase;
@@ -280,7 +289,7 @@ body.fixed-menu #burger-menu {
 ====================================*/
 #header {
   height: 158px;
-  background-color: #f6f6f6;
+  background-color: #FEFAE0;
   width: 100%;
 }
 
@@ -296,9 +305,9 @@ body.fixed-menu #burger-menu {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-size: 32px;
-  color: #4ac3bf;
+  color: #BC6C25;
   text-indent: -9999px;
   margin-right: 32px;
   float: left;
@@ -321,23 +330,23 @@ body.fixed-menu #burger-menu {
 
 #header .page-title h1 {
   margin: 0px;
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-size: 24px;
   font-weight: normal;
-  color: #4ac3bf;
+  color: #BC6C25;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 5px;
 }
 
 #header .page-title .lead {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-weight: 100;
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin: 0px;
-  color: #333333;
+  color: #283618;
 }
 
 #header .menu-pager {
@@ -358,8 +367,8 @@ body.fixed-menu #burger-menu {
   border-radius: 50%;
   line-height: 38px;
   text-align: center;
-  color: #333333;
-  border: 2px solid #333333;
+  color: #283618;
+  border: 2px solid #283618;
 }
 
 #header .menu-pager li a i {
@@ -369,9 +378,10 @@ body.fixed-menu #burger-menu {
 }
 
 #header .menu-pager li a:hover {
-  color: #4ac3bf;
-  border-color: #4ac3bf;
+  color: #BC6C25;
+  border-color: #BC6C25;
 }
+
 
 
 /* Helpers and Elements
@@ -396,13 +406,22 @@ body.fixed-menu #burger-menu {
   color: #fff;
 }
 
+.lapis-blue {
+  color: #2660A4 !important;
+  border-color: #2660A4 !important;
+}
+
 .text-light.title-lg,
 .text-light.title-md {
   color: #fff;
 }
 
 .text-brand {
-  color: #4ac3bf;
+  color: #BC6C25;
+}
+
+.img-responsive {
+  margin-top:25px;
 }
 
 
@@ -415,7 +434,7 @@ body.fixed-menu #burger-menu {
 
 .service-item .icon {
   font-size: 48px;
-  color: #333333;
+  color: #283618;
   float: left;
 }
 
@@ -499,7 +518,7 @@ body.fixed-menu #burger-menu {
   content: '';
   position: absolute;
   height: 1px;
-  background-color: #fff;
+  background-color: #2660A4;
   left: 0px;
   right: 37px;
   top: 0px;
@@ -513,14 +532,14 @@ body.fixed-menu #burger-menu {
   content: '';
   position: absolute;
   height: 1px;
-  background-color: #fff;
+  background-color: #2660A4;
   left: 37px;
   right: 0px;
   top: 0px;
 }
 
 .reference .entry-item {
-  border: 1px solid #fff;
+  border: 1px solid #2660A4;
   border-top: 0px;
   position: relative;
   padding-top: 50px;
@@ -559,7 +578,7 @@ body.fixed-menu #burger-menu {
 .reference .entry-item .avatar .radius-cutter .radius {
   width: 100%;
   height: 74px;
-  border: 1px solid #fff;
+  border: 1px solid #2660A4;
   border-radius: 50%;
 }
 
@@ -569,7 +588,7 @@ body.fixed-menu #burger-menu {
   font-weight: normal;
   font-style: normal;
   line-height: 24px;
-  color: #fff;
+  color: #2660A4;
   border: 0px;
   margin: 0px;
   padding: 0px;
@@ -580,7 +599,7 @@ body.fixed-menu #burger-menu {
   display: block;
   margin-top: 10px;
   font-weight: bold;
-  color: #4ac3bf;
+  color: #BC6C25;
   font-style: normal;
 }
 
@@ -613,7 +632,7 @@ body.fixed-menu #burger-menu {
 .price-box .entry-item {
   text-align: center;
   padding: 30px;
-  border: 1px solid #333333;
+  border: 1px solid #2660A4;
   cursor: pointer;
 }
 
@@ -621,7 +640,7 @@ body.fixed-menu #burger-menu {
   display: inline-block;
   width: 140px;
   height: 140px;
-  border: 2px solid #333333;
+  border: 2px solid #2660A4;
   border-radius: 50%;
   position: relative;
 }
@@ -634,7 +653,7 @@ body.fixed-menu #burger-menu {
   right: 5px;
   bottom: 5px;
   border-radius: 50%;
-  background-color: #333333;
+  background-color: #2660A4;
   -webkit-transition: all 0.25s ease;
   -moz-transition: all 0.25s ease;
   transition: all 0.25s ease;
@@ -645,7 +664,7 @@ body.fixed-menu #burger-menu {
 }
 
 .price-box .entry-item .circle-label h6 {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-weight: normal;
   font-size: 25px;
   color: #fff;
@@ -679,11 +698,11 @@ body.fixed-menu #burger-menu {
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #283618;
   padding-bottom: 30px;
   margin-bottom: 30px;
   margin-top: 20px;
-  color: #333333;
+  color: #283618;
 }
 
 .price-box .entry-item .box-info .btn {
@@ -693,30 +712,30 @@ body.fixed-menu #burger-menu {
 
 .price-box.active .entry-item .circle-label,
 .price-box:hover .entry-item .circle-label {
-  border-color: #4ac3bf;
+  border-color: #BC6C25;
 }
 
 .price-box.active .entry-item .circle-label::before,
 .price-box:hover .entry-item .circle-label::before {
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
 }
 
 .price-box.active .entry-item .box-info h4,
 .price-box:hover .entry-item .box-info h4 {
-  color: #4ac3bf;
+  color: #BC6C25;
 }
 
 .price-box.active .entry-item .box-info .btn,
 .price-box:hover .entry-item .box-info .btn {
   color: #fff;
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
 }
 /* Timeline
 ==================================================================*/
 
 .timeline-exp .exp-title {
   text-align: center;
-  color: #4ac3bf;
+  color: #BC6C25;
 }
 
 .timeline-exp .exp-title .exp-icon {
@@ -725,8 +744,8 @@ body.fixed-menu #burger-menu {
 }
 
 .timeline-exp .exp-title h4 {
-  color: #4ac3bf;
-  font-family: 'Oswald';
+  color: #BC6C25;
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-weight: normal;
   font-size: 26px;
   letter-spacing: 1px;
@@ -735,7 +754,7 @@ body.fixed-menu #burger-menu {
 
 .timeline-exp .timeline-wrapper {
   position: relative;
-  border-top: 2px solid #333333;
+  border-top: 2px solid #283618;
   padding-top: 54px;
   margin-top: 30px;
 }
@@ -751,7 +770,7 @@ body.fixed-menu #burger-menu {
   display: inline-block;
   width: 54px;
   height: 54px;
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
   border-radius: 50%;
   font-size: 30px;
   text-align: center;
@@ -772,7 +791,7 @@ body.fixed-menu #burger-menu {
   font-size: 15px;
   font-weight: normal;
   text-transform: uppercase;
-  color: #333333;
+  color: #283618;
 }
 
 .timeline-exp .timeline-wrapper .tl-item h4 {
@@ -782,7 +801,7 @@ body.fixed-menu #burger-menu {
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 15px;
-  color: #4ac3bf;
+  color: #BC6C25;
 }
 
 .timeline-exp .timeline-wrapper .tl-item p {
@@ -798,11 +817,11 @@ body.fixed-menu #burger-menu {
 .timeline-exp .timeline-wrapper .tl-item.pull-right .icon {
   right: auto;
   left: -27px;
-  background-color: #333333;
+  background-color: #283618;
 }
 
 .timeline-exp .timeline-wrapper .tl-item.pull-right h4 {
-  color: #333333;
+  color: #283618;
 }
 
 .timeline-exp .timeline-wrapper::before {
@@ -813,7 +832,7 @@ body.fixed-menu #burger-menu {
   margin-left: -1px;
   width: 2px;
   height: 100%;
-  background-color: #333333;
+  background-color: #283618;
 }
 
 .timeline-exp .timeline-wrapper > .row + .row {
@@ -836,7 +855,7 @@ body.fixed-menu #burger-menu {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 14px;
-  color: #333333;
+  color: #283618;
   text-transform: uppercase;
   letter-spacing: 1px;
   float: left;
@@ -847,7 +866,7 @@ body.fixed-menu #burger-menu {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 14px;
-  color: #333333;
+  color: #283618;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -859,7 +878,7 @@ body.fixed-menu #burger-menu {
 
 .progress-line .entry-line .current {
   height: 5px;
-  background-color: #333333;
+  background-color: #283618;
   width: 0%;
   position: relative;
   top: -5px;
@@ -872,7 +891,7 @@ body.fixed-menu #burger-menu {
   content: '';
   width: 17px;
   height: 17px;
-  background-color: #333333;
+  background-color: #283618;
   border-radius: 50%;
   position: absolute;
   right: -1px;
@@ -898,21 +917,21 @@ body.fixed-menu #burger-menu {
 }
 
 .pie-progress-wrapper .pie_progress path {
-  stroke: #333333 !important;
+  stroke: #283618 !important;
 }
 
 .pie-progress-wrapper .pie_progress .pie_progress__number {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 26px;
-  color: #333333;
+  color: #283618;
 }
 
 .pie-progress-wrapper h4 {
   font-family: 'Lato';
   font-weight: bold;
   font-size: 20px;
-  color: #333333;
+  color: #283618;
   text-transform: uppercase;
   margin-top: 20px;
 }
@@ -920,7 +939,7 @@ body.fixed-menu #burger-menu {
 ==================================================================*/
 
 .accordion-container .accordion-group .accordion-header {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-size: 20px;
   font-weight: normal;
   text-transform: uppercase;
@@ -970,11 +989,11 @@ body.fixed-menu #burger-menu {
 }
 
 .accordion-container .accordion-group.active .accordion-header a {
-  color: #4ac3bf;
+  color: #BC6C25;
 }
 
 .accordion-container .accordion-group.active .accordion-header span {
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
 }
 
 .accordion-container .accordion-group.active .accordion-header span i {
@@ -997,7 +1016,7 @@ body {
   font-weight: normal;
   font-size: 15px;
   line-height: 2em;
-  color: #777777;
+  color: #283618;
 }
 
 h1,
@@ -1006,18 +1025,18 @@ h3,
 h4,
 h5,
 h6 {
-  color: #333333;
+  color: #DDA15E;
 }
 
 blockquote {
-  border-left: 2px solid #4ac3bf;
+  border-left: 2px solid #BC6C25;
   margin-left: 50px;
   padding-left: 30px;
   font-size: 17px;
   font-family: 'Lato';
   font-style: italic;
   font-weight: bold;
-  color: #333333;
+  color: #283618;
   line-height: 30px;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -1026,7 +1045,7 @@ blockquote {
 .btn,
 button,
 input[type="submit"] {
-  background-color: #333333;
+  background-color: #2660A4;
   color: #fff;
   font-family: 'Lato';
   font-size: 13px;
@@ -1050,7 +1069,7 @@ input[type="submit"]:hover,
 .btn.active,
 button.active,
 input[type="submit"].active {
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
   color: #fff;
 }
 
@@ -1099,8 +1118,8 @@ input[type="submit"].active {
 .pagination li span,
 .pagination li span:hover {
   color: #fff;
-  background-color: #4ac3bf;
-  border-color: #4ac3bf;
+  background-color: #BC6C25;
+  border-color: #BC6C25;
 }
 
 .title-404 {
@@ -1121,12 +1140,12 @@ input[type="submit"].active {
 }
 
 .sub-title {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-size: 18px;
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: #4ac3bf;
+  color: #BC6C25;
   position: relative;
   margin: 0px;
   margin-bottom: 40px;
@@ -1139,7 +1158,7 @@ input[type="submit"].active {
   width: 75px;
   left: 0px;
   bottom: -18px;
-  background-color: #333333;
+  background-color: #283618;
 }
 
 .list-details {
@@ -1151,7 +1170,7 @@ input[type="submit"].active {
 
 .list-details strong,
 .list-details b {
-  color: #333333;
+  color: #283618;
 }
 
 .labels {
@@ -1164,7 +1183,7 @@ input[type="submit"].active {
   display: inline-block;
   font-family: 'Lato';
   font-size: 12px;
-  color: #333333;
+  color: #283618;
   text-transform: uppercase;
   text-decoration: none;
   padding-left: 12px;
@@ -1204,12 +1223,12 @@ input[type="submit"].active {
 }
 
 .labels a:hover {
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
   color: #fff;
 }
 
 .labels a:hover::before {
-  border-right-color: #4ac3bf;
+  border-right-color: #BC6C25;
 }
 
 [data-bg-image] {
@@ -1236,12 +1255,12 @@ input[type="submit"].active {
 
 .title-lg,
 .title-md {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-size: 32px;
   font-weight: normal;
   line-height: 1.3em;
   letter-spacing: 1px;
-  color: #4ac3bf;
+  color: #BC6C25;
   margin-bottom: 20px;
 }
 
@@ -1250,14 +1269,14 @@ input[type="submit"].active {
 }
 
 .title-lgx {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-size: 70px;
   font-weight: bold;
   letter-spacing: 1px;
 }
 
 .title-light {
-  font-family: 'Oswald';
+  font-family: 'Exo 2', 'Oswald', 'Georgia';
   font-size: 30px;
   font-weight: 100;
   letter-spacing: 1px;
@@ -1301,7 +1320,7 @@ ul.socials li a {
   width: 43px;
   height: 43px;
   line-height: 43px;
-  background-color: #333333;
+  background-color: #2660A4;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -1313,7 +1332,7 @@ ul.socials li a {
 }
 
 ul.socials li a:hover {
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
 }
 
 form .col-md-6:nth-child(2n+1) {
@@ -1332,7 +1351,7 @@ form textarea {
   font-family: 'Lato';
   font-size: 13px;
   text-transform: uppercase;
-  color: #333333;
+  color: #283618;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 10px;
@@ -1341,8 +1360,8 @@ form textarea {
 form input:not([type="submit"]):focus,
 form textarea:focus {
   outline: none;
-  border-bottom-color: #4ac3bf;
-  color: #4ac3bf;
+  border-bottom-color: #BC6C25;
+  color: #BC6C25;
 }
 
 form textarea {
@@ -1432,10 +1451,10 @@ address table td:first-child {
 
 .widget ul li:hover a{
   text-decoration: none;
-  color: #4ac3bf;
+  color: #BC6C25;
 }
 .widget ul li:hover .count{
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
 }
 
 .widget .widget-tags{
@@ -1450,7 +1469,7 @@ address table td:first-child {
   margin-bottom: 8px;
 }
 .widget .widget-tags a:hover{
-  background-color: #4ac3bf;
+  background-color: #BC6C25;
   text-decoration: none;
 }
 
@@ -1490,11 +1509,11 @@ address table td:first-child {
 ====================================*/
 
 #footer {
-  background-color: #f5f5f5;
+  background-color: #FEFAE0;
   font-size: 14px;
   line-height: 1.7em;
   font-family: 'Lato';
-  color: #333333;
+  color: #283618;
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -1504,7 +1523,7 @@ address table td:first-child {
 }
 
 #footer a {
-  color: #4ac3bf;
+  color: #BC6C25;
   text-decoration: none;
 }
 
@@ -1532,7 +1551,7 @@ address table td:first-child {
 }
 
 #footer ul.social li a:hover {
-  color: #4ac3bf;
+  color: #BC6C25;
 }
 /* Responsive
 ====================================*/
